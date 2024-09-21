@@ -20,13 +20,13 @@ export default function Search({ placeholder }) {
   }
  
   return (
-    <div className='d-flex col col-sm-4 align-items-center'>
-      <label htmlFor="search" >
+    <div className='d-flex col-sm-4 align-items-start justify-content-start px-4'>
+      <label htmlFor="search" className='m-2 p-2'>
         Search
       </label>
-      <input 
+      <input
         name="search"
-        className='form-control'
+        className='form-control m-2 p-2'
         placeholder={placeholder}
         onChange={(e) => {
           handleSearch(e.target.value);
